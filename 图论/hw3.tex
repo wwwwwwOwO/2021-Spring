@@ -1,0 +1,85 @@
+\documentclass[UTF8]{ctexart}
+
+%\documentclass[12pt]{article}
+\usepackage[a4paper,
+            left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+
+\nonstopmode
+%\usepackage[utf-8]{inputenc}
+\usepackage{graphicx} % Required for including pictures
+\usepackage[figurename=Figure]{caption}
+\usepackage{float}    % For tables and other floats
+\usepackage{verbatim} % For comments and other
+\usepackage{amsmath}  % For math
+\usepackage{amssymb}  % For more math
+\usepackage{fullpage} % Set margins and place page numbers at bottom center
+\usepackage{paralist} % paragraph spacing
+\usepackage{listings} % For source code
+\usepackage{subfig}   % For subfigures
+%\usepackage{physics}  % for simplified dv, and 
+\usepackage{enumitem} % useful for itemization
+\usepackage{siunitx}  % standardization of si units
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\usepackage{tikz,bm} % Useful for drawing plots
+%\usepackage{tikz-3dplot}
+
+\begin{document}
+
+\begin{center}
+	\hrule
+	\vspace{.4cm}
+	{\textbf { \Large 图论及其应用：第三次作业}}
+\end{center}
+	\hrule
+	
+\vspace{0.5cm}
+	
+\noindent 请回答任意五题，将答案于北京时间六月三十日午夜前发送至\url{2160853158@qq.com}，邮件题目请注明姓名学号 
+
+\vspace{0.5cm}
+
+\paragraph*{题一}
+最多可以将地球分成几个区域，使任何两个区域都相邻。
+
+\paragraph*{题二}
+证明有10个顶点的5正则图不是平面图。
+
+\paragraph*{题三} 	
+考察图$G\triangleq(V,E)$，记$\chi(G)$为$G$的点色数，证明：
+\begin{itemize}
+    \item 如果$\forall v\in V:\chi(G-v)=\chi(G)-1$，$G$连通；
+    \item 如果$\forall x,y\in V:\chi(G-x-y)=\chi(G)-2$，$G$是完全图。
+\end{itemize}
+
+
+\paragraph*{题四} 	
+图$G$有$n$个顶点，记$\bar{G}$为$G$的补图，证明：
+\begin{itemize}
+    \item $\chi(G)\chi(\bar{G})\ge n$；
+    \item $\chi(G)+\chi(\bar{G})\le n+1$。
+\end{itemize}
+
+\paragraph*{题五} 
+3正则图$G$的边色数为$4$，证明$G$不是H图。
+
+
+\paragraph*{题六} 
+给定一个点色数为$k$的$k$染色方案，证明对任何一种颜色$c$，均存在$c$颜色的顶点，其邻居包含所有其他颜色。
+
+
+\paragraph*{题七} 
+给定$n$个顶点，$m$条边的图$G$，证明$G$包含一个偶子图$H$，其边的数目至少为$\displaystyle\frac{2\lfloor n^2/4\rfloor m}{n(n-1)}$。
+
+
+\paragraph*{题八} 
+证明任何平面图最少有$4$个度数小于$6$的顶点。
+
+
+\paragraph*{题九} 
+对$p=1/n$的随机图$G_{n,p}$，证明$\forall\epsilon>0$，大概率不存在多于$(1+\epsilon)n/2$个顶点的连通分支。
+
+
+\end{document}
+
